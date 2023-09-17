@@ -1,14 +1,10 @@
 const { Router } = require('express')
-const manager = require('../../dao/managers/user.manager')
+const {
+  create
+} = require ("../../controllers/user.controller.js")
 
 const router = Router()
 
-router.post('/', async (req, res) => {
-  const { body } =  req
-
-  const created = await manager.create(body)
-
-  res.send(created)
-})
+router.post('/', create)
 
 module.exports = router
