@@ -6,7 +6,7 @@ const {
   create,
   deleteById,
   putPatch
-} = require ("../../controllers/products.controller")
+} = require ("../../controllers/products.controller.js")
 
 const router = Router()
 

@@ -9,7 +9,7 @@ const {
   getById,
   findById,
   deleteAll
-} = require ("../controllers/cart.controller")
+} = require ("../controllers/cart.controller.js")
 
 const router = Router();
 
